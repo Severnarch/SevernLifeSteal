@@ -31,9 +31,8 @@ public class SevernLifeStealCommand implements CommandExecutor, TabCompleter {
         List<String> completions = new ArrayList<>();
         List<String> commands = new ArrayList<>();
         if (args.length == 1) {
-            if (sender.hasPermission("tjsrpgplugin.admin")) commands.add("admin");
+            if (sender.hasPermission("severnlifesteal.mhp.add") || sender.hasPermission("severnlifesteal.mhp.remove") || sender.hasPermission("severnlifesteal.mhp.set") || sender.hasPermission("severnlifesteal.mhp.*")) commands.add("mhp");
             commands.add("help");
-            commands.add("spellwand");
             StringUtil.copyPartialMatches(args[0], commands, completions);
         }
         Collections.sort(completions);
