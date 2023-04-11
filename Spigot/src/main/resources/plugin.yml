@@ -1,0 +1,9 @@
+name: SevernLifeSteal
+version: '${version}'
+main: io.github.severnarch.severnlifesteal.SevernLifeSteal
+api-version: 1.19
+prefix: severnlifesteal
+load: STARTUP
+authors: [ Severnarch ]
+description: A multi-platform life steal mod/plugin for Minecraft.
+website: https://github.com/Severnarch/SevernLifeSteal
