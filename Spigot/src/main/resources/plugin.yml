@@ -7,3 +7,26 @@ load: STARTUP
 authors: [ Severnarch ]
 description: A multi-platform life steal mod/plugin for Minecraft.
 website: https://github.com/Severnarch/SevernLifeSteal
+commands:
+  severnlifesteal:
+    aliases: [sls]
+    description: The main command for SevernLifeSteal
+permissions:
+  severnlifesteal.revive:
+    description: Anybody with this permission node can revive a player in soft-spectator
+    default: op
+  severnlifesteal.mhp.<add|remove|set|*>:
+    description: All subnodes are ADD, REMOVE, SET and *
+    default: op
+  severnlifesteal.give:
+    description: Anybody with this permission node can donate MHP to another player
+    default: op
+  severnlifesteal.config.<toggle|edit|*>:
+    description: Anybody with this permission node can edit SLS config in-game
+    default: op
+  severnlifesteal.config.toggle:
+    description: Anybody with this permission node can toggle SLS features in-game
+    default: op
+  severnlifesteal.config.edit.<[feature]|*>:
+    description: Anybody with this permission node can edit SLS features in-game
+    default: op

@@ -19,13 +19,13 @@ Soft-spectator is a replacement for the common ban-on-loss technique, having the
 > **[!] WARNING**<br>
 > Disabling this causes players who have died to only be revivable by using an admin command.<br>
 
-When a player is killed on their last half-heart (1mhp) and enters **Soft-Spectator** mode, the player will drop their **Head** which can be placed anywhere. Reviving works by right-clicking a player's [laced **Head** with a **Totem of Undying**, which will set the player back to normal, but with 5 hearts (10mhp) instead of 10 hearts (20mhp), and teleport them to the **Head** location. The player's **Head** will despawn once the revival completes, and this process also works with the player offline.
+When a player is killed on their last half-heart (1mhp) and enters **Soft-Spectator** mode, the player will drop their **Head** which can be placed anywhere. Reviving works by right-clicking a player's placed **Head** with a **Totem of Undying**, which will set the player back to normal, but with 5 hearts (10mhp) instead of 10 hearts (20mhp), and teleport them to the **Head** location. The player's **Head** will despawn once the revival completes, and this process also works with the player offline.
 
 ## Commands
 These are special commands for the SevernLifeSteal mod, all under `/severnlifesteal` (*or `/sls`*). A list of commands can be seen below:
-  - `/sls revive <player>` - Revive a player in soft-spectator mode [Permission level 3]
-  - `/sls mhp <add|remove|set> <player> <amount>` - Edit a player's MHP value [Permission level 3]
-  - `/sls give <player> <amount>` - Give another player `<amount>` MHP [Permission level 0]
+  - `/sls revive <player>` - Revive a player in soft-spectator mode [Permission level 3 or `severnlifesteal.revive`]
+  - `/sls mhp <add|remove|set> <player> <amount>` - Edit a player's MHP value [Permission level 3 or `severnlifesteal.mhp.<add|remove|set|*>`]
+  - `/sls give <player> <amount>` - Give another player `<amount>` MHP [Permission level 0 or `severnlifesteal.give`]
   - `/sls config ...` - Configure the SLS mod [Permission level 4 or `severnlifesteal.config.<toggle|edit|*>`] 
     - `/sls config <enable|disable> <feature>` - Enable or disable a feature for the mod [Permission level 4 or `severnlifesteal.config.toggle`]
     - `/sls config edit <feature> <configArg> <value>` - Edit a feature's `<configArg>` [Permission level 4 or `severnlifesteal.config.edit.<[feature]|*>`]
