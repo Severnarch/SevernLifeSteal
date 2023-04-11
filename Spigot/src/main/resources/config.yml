@@ -6,8 +6,7 @@ disabledFeatures: []
 # Feature-specific settings
 featureSettings:
   nameColouring:
-    lightGreenMHP: 40
-    darkGreenMHP: 20
-    yellowMHP: 10
-    goldMHP: 3
-    redMHP: 0
+    highLevelMHP: 40 # Recommended to be above 30
+    normLevelMHP: 20 # Recommended to be above 18
+    okayLevelMHP: 10 # Recommended to be above 8
+    lowLevelMHP: 3   # Recommended to be above 2
