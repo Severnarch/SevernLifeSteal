@@ -1,6 +1,6 @@
 ![Server Environment](https://img.shields.io/badge/Environment-SERVER-ddd?labelColor=222) ![Forge, Fabric and Spigot Loaders](https://img.shields.io/badge/Loader-FORGE%2C%20FABRIC%20&%20SPIGOT-ddd?labelColor=222)
 
-# SevernLifeSteal ![Mod/Plugin](https://img.shields.io/badge/[%20%20%20Mod%2fPlugin-]-22d?labelColor=22d)
+# SevernLifeSteal ![Mod/Plugin](https://img.shields.io/badge/[%20%20%20%20Mod%2fPlugin-]-22d?labelColor=22d)
 SevernLifeSteal (*or SLS*) is a multi-platform life steal mod for Minecraft. This mod aims to support Forge, Fabric/Quilt and Spigot.
 
 ## Features
