@@ -36,5 +36,5 @@ This is a list of definitions for non-standard words or abbreviations used withi
 
 [^1]: All features are ON/TRUE by default, meaning to disable them you either edit the properties file or use an admin command.
 [^2]: This can be customised, the value shown here is the default amount.
-[^3]: The value for hearts is an integer similar to how Vanilla Minecraft has heart values, with 2 being a full heart and 1 being half a heart.
-[^4]: This value can not be customised, most likely as it is the lowest value possible.
+[^3]: The value for hearts is an integer similar to how Vanilla Minecraft has heart values, with 2 as a full heart and 1 being a half heart.
+[^4]: This value can not be customised.
