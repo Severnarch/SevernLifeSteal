@@ -19,8 +19,8 @@ public class PlayerListener implements Listener {
         Player player = event.getEntity();
         if(player.getKiller() != null){
             if (player.getKiller().getAttribute(Attribute.GENERIC_MAX_HEALTH) != null && player.getAttribute(Attribute.GENERIC_MAX_HEALTH) != null) {
-                player.getKiller().getAttribute(Attribute.GENERIC_MAX_HEALTH).setBaseValue(player.getKiller().getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue() + 1.0);
-                player.getAttribute(Attribute.GENERIC_MAX_HEALTH).setBaseValue(player.getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue() - 1.0);
+                player.getKiller().getAttribute(Attribute.GENERIC_MAX_HEALTH).setBaseValue(player.getKiller().getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue() + 2.0);
+                player.getAttribute(Attribute.GENERIC_MAX_HEALTH).setBaseValue(player.getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue() - 2.0);
             }
             plugin.updatePlayerName(player.getKiller());
         }
