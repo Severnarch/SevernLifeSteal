@@ -1,6 +1,8 @@
 package io.github.severnarch.severnlifesteal;
 
+import io.github.severnarch.severnlifesteal.listeners.PlayerListener;
 import org.bukkit.ChatColor;
+import org.bukkit.attribute.Attribute;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -23,7 +25,7 @@ import java.util.logging.Level;
 
 public final class SevernLifeSteal extends JavaPlugin {
 
-    public List<Listener> listeners = List.of();
+    public List<Listener> listeners = List.of(new PlayerListener());
     public String prefix = ChatColor.translateAlternateColorCodes('&', "&4[&cSevernLifeSteal&4] &7");
 
     private File playersDataFile;
@@ -126,5 +128,21 @@ public final class SevernLifeSteal extends JavaPlugin {
         StringUtil.copyPartialMatches(match, onlinePlayers, matchedPlayers);
         Collections.sort(matchedPlayers);
         return this.getServer().getPlayer(matchedPlayers.get(0));
+    }
+
+    public void updatePlayerName(Player player) {
+        if (player.getAttribute(Attribute.GENERIC_MAX_HEALTH) != null) {
+            double mhp = player.getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue();
+            if (mhp > 40) setPlayerDisplayName(player, ChatColor.DARK_GREEN + player.getName());
+            else if (mhp > 20) setPlayerDisplayName(player, ChatColor.GREEN + player.getName());
+            else if (mhp > 10) setPlayerDisplayName(player, ChatColor.YELLOW + player.getName());
+            else if (mhp > 3) setPlayerDisplayName(player, ChatColor.GOLD + player.getName());
+            else if (mhp > 0) setPlayerDisplayName(player, ChatColor.RED + player.getName());
+        }
+    }
+
+    public void setPlayerDisplayName(Player player, String text) {
+        player.setDisplayName(text);
+        player.setPlayerListName(text);
     }
 }
