@@ -4,7 +4,7 @@
 SevernLifeSteal (*or SLS*) is a multi-platform life steal mod for Minecraft. This mod aims to support Forge, Fabric/Quilt and Spigot.
 
 ## Features
-As this is a LifeSteal mod, there is a feature where killing someone makes the killer gain one heart and the victim lose a heart. However, there more features revolved around this singular feature which can be toggled[^1].
+As this is a LifeSteal mod, there is a feature where killing someone makes the killer gain half a heart and the victim lose half a heart (unlike regular LifeSteal where its a full heart). However, there more features revolved around this singular feature which can be toggled[^1].
 ### Name Colouring
 One of these additional features is the recolouring of names depending on how many maximum hearts you, as a player, have. You will be **![](https://placehold.it/16x16/00aa00/00aa00.png) dark green** when above two rows of hearts (40mhp)[^2][^3], **![](https://placehold.it/16x16/55ff55/55ff55.png) light green** when above one row of hearts (20mhp)[^2][^3], **![](https://placehold.it/16x16/ffff55/ffff55.png) yellow** when above half a row of hearts (10mhp)[^2][^3], **![](https://placehold.it/16x16/ffaa00/ffaa00.png) gold** when above one and a half hearts (3mhp)[^2][^3] and finally **![](https://placehold.it/16x16/ff5555/ff5555.png) red** when above no hearts (0mhp)[^4][^3]. Soft-spectators will have a **![](https://placehold.it/16x16/555555/555555.png) dark grey** name regardless of whether **Name Colouring** is enabled or not.
 ### Soft-Spectator
