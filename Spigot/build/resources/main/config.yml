@@ -1,0 +1,12 @@
+# Specifying features here will ENABLE them as long as they aren't under disabledFeatures
+enabledFeatures: ["nameColouring", "softSpectator", "playerReviving"]
+# Specifying features here will DISABLE them as long as they aren't under enabledFeatures
+disabledFeatures: []
+
+# Feature-specific settings
+featureSettings:
+  nameColouring:
+    highLevelMHP: 40 # Recommended to be above 30
+    normLevelMHP: 20 # Recommended to be above 18
+    okayLevelMHP: 10 # Recommended to be above 8
+    lowLevelMHP: 3   # Recommended to be above 2

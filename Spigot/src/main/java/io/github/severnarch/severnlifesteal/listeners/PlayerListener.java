@@ -7,6 +7,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.PlayerDeathEvent;
+import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.Objects;
@@ -20,8 +21,16 @@ public class PlayerListener implements Listener {
             if (player.getKiller().getAttribute(Attribute.GENERIC_MAX_HEALTH) != null && player.getAttribute(Attribute.GENERIC_MAX_HEALTH) != null) {
                 player.getKiller().getAttribute(Attribute.GENERIC_MAX_HEALTH).setBaseValue(player.getKiller().getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue() + 1.0);
                 player.getAttribute(Attribute.GENERIC_MAX_HEALTH).setBaseValue(player.getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue() - 1.0);
-                plugin.updatePlayerName(player);plugin.updatePlayerName(player.getKiller());
             }
+            plugin.updatePlayerName(player.getKiller());
         }
+        plugin.updatePlayerName(player);
+    }
+
+    @EventHandler
+    public void onPlayerJoin(PlayerJoinEvent event) {
+        SevernLifeSteal plugin = JavaPlugin.getPlugin(SevernLifeSteal.class);
+        Player player = event.getPlayer();
+        plugin.updatePlayerName(player);
     }
 }

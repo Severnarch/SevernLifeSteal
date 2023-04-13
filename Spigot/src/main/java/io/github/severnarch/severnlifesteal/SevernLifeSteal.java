@@ -133,10 +133,10 @@ public final class SevernLifeSteal extends JavaPlugin {
     public void updatePlayerName(Player player) {
         if (player.getAttribute(Attribute.GENERIC_MAX_HEALTH) != null) {
             double mhp = player.getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue();
-            if (mhp > 40) setPlayerDisplayName(player, ChatColor.DARK_GREEN + player.getName());
-            else if (mhp > 20) setPlayerDisplayName(player, ChatColor.GREEN + player.getName());
-            else if (mhp > 10) setPlayerDisplayName(player, ChatColor.YELLOW + player.getName());
-            else if (mhp > 3) setPlayerDisplayName(player, ChatColor.GOLD + player.getName());
+            if (mhp >= 40) setPlayerDisplayName(player, ChatColor.DARK_GREEN + player.getName());
+            else if (mhp >= 20) setPlayerDisplayName(player, ChatColor.GREEN + player.getName());
+            else if (mhp >= 10) setPlayerDisplayName(player, ChatColor.YELLOW + player.getName());
+            else if (mhp >= 3) setPlayerDisplayName(player, ChatColor.GOLD + player.getName());
             else if (mhp > 0) setPlayerDisplayName(player, ChatColor.RED + player.getName());
         }
     }
